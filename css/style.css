@@ -11,8 +11,15 @@ body{
 
 img{
     width: 100%;
-    max-height: 235px;
-    object-fit: cover;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #019267;
 }
 
 i{
@@ -26,89 +33,56 @@ span{
     font-style: italic;
 }
 
+/* Header */
+
 header{
-    background-image: url(../assets/header.jpg);
-    background-size: cover;
     display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    background-color: #212529;
+    color: white;
 }
 
 header img{
-    width: 250px;
+    width: 50px;
+    margin: 10px;
+}
+
+h1{
+    color: #f7ebeb;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav{
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
 }
 
 ul{
-    display: flex;
-    justify-content: flex-end;
+    margin: 0 25px;
 }
 
 ul li{
     list-style-type: none;
-    margin: 10px 20px;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-ul li a:hover{
-    color: #024935;
-    text-shadow: 10px 10px 21px black;
-    transition: .5s;
-}
-
-a{
-    text-decoration: none;
-    color: #019267;
-}
-
-h1{
-    font-family: 'Noto Serif', serif;
-    text-align: center;
-    font-size: 3em;
-    margin: 30px 0;
-    color: #019267;
-}
-
-#nosotros{
-    width: 65%;
-    margin: 40px auto 0px auto;
-    text-align: center;
     font-size: 1.2em;
 }
 
-#nosotros p{
-    margin: 40px 0;
+.navbar-dark .navbar-nav .nav-link {
+    color: #f7ebeb ;
+    font-weight: 100;
 }
 
-#servicio{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-
-.servicio__card{
-    width: 30%;
-    min-width: 350px;
-    margin: 30px 0;
-}
-
-.servicio__card:hover{
-    text-transform: uppercase;
-    transform: scale(110%);
-    
+.navbar-dark .navbar-nav a.nav-link:hover{
+    text-shadow: 5px 5px 20px white;
     transition: .5s;
+    color: #648f82;
 }
 
-.servicio__card p{
-    text-align: justify;
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #019267;
 }
+
+
 
 footer{
     display: flex;
