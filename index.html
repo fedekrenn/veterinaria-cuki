@@ -36,11 +36,16 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="./index.html"><h1>Veterinaria Cuki</h1></a>
+                <a href="./index.html">
+                    <h1>Veterinaria Cuki</h1>
+                </a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./pages/galeria.html">Nosotros</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/servicios.html">Servicios</a>
@@ -53,44 +58,31 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div id="nosotros" data-aos="zoom-in">
+    <main class="index">
+        <div class="nosotros">
+            <h2>Tu veterinaria de confianza</h2>
             <p>En <span>Veterinaria Cuki</span> contamos con un equipo de trabajo altamente idóneo para atender a
                 nuestros mejores
                 amigos. Conjugamos las <b>mejores instalaciones</b> para la atención y el cuidado de sus mascotas, con
                 los
-                <b>profesionales más capacitados</b> en la asistencia veterinaria.
+                <b>profesionales más capacitados</b> en la asistencia veterinaria. La salud de nuestras mascotas es tan importante como la de cualquier integrante de la familia.
             </p>
-            <p><span>La salud de nuestras mascotas es tan importante como la de cualquier integrante de la familia.:
-                    Atención
-                    las 24 hs., los 365 días del año.</span></p>
+            <h3>Atención las 24 hs., los 365 días del año.</h3>
+            <button role="link" type="button" class="btn btn-success">Conocenos</button>
         </div>
-        <div id="servicio">
-            <div class="servicio__card" data-aos="fade-right">
-                <img src="https://centraldemascotas.com/www/rsc/img/consultorio-veterinario.jpg"
-                    alt="Consultorio de mascotas">
-                <p>3 Consultorios de atención simultáneas para revisiones generales, diagnóstico y controles</p>
-            </div>
-            <div class="servicio__card" data-aos="fade-up">
-                <img src="https://blog.infoempleo.com/media/2017/07/ThinkstockPhotos-79085935-1024x686.jpg"
-                    alt="Médica veterinaria atendiendo a un perro">
-                <p>Consultas y vacunación a domicilio, el mismo servicio con la comodidad de no trasladar a la mascota
-                    hacia nuestra clínica</p>
-            </div>
-            <div class="servicio__card" data-aos="fade-left">
-                <img src="https://www.diarioveterinario.com/images/showid2/2859329?w=900"
-                    alt="Perro y su dueña entrando en la consulta">
-                <p>Electrocardiograma, interconsultas con Médicos Veterinarios especialistas en Cardiología Servicio de
-                    odontología, limpieza de dientes por ultrasonido.</p>
-            </div>
-        </div>
+
     </main>
-    <footer id="contacto">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-whatsapp"></i>
+
+    <footer class="index">
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
         <p>Veterinaria Cuki - Luis Agote 250 Bº Mirador</p>
+        <p>Sitio web diseñado por Federico Krenn</p>
     </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
