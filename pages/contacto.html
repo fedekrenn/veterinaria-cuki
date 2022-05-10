@@ -52,7 +52,25 @@
         </nav>
     </header>
     
-    <main>
+    <main class="contacto-page">
+
+        <div class="seccion-introductora">
+            <h2>Dejanos tu mensaje</h2>
+            <p>Nuestro equipo se pondrá en contacto a la brevedad para responder tu consulta y
+                poder cuidar de tu mascota</p>
+        </div>
+
+        <form action="" class="mi-formulario">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Juan Perez" required>
+            <label for="tel">Teléfono</label>
+            <input type="number" name="tel" id="tel" placeholder="11xxxx8782" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="tunombre@ejemplo.com" required>
+            <label for="msj">Mensaje</label>
+            <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar" class="btn btn-success send-form">
+        </form>
 
     </main>
 

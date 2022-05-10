@@ -11,6 +11,7 @@ img{
 
 h1, h2, h3, h4 {
     margin: 0;
+    text-align: center;
 }
 
 h1{
@@ -30,6 +31,7 @@ h3{
 
 p{
     margin-bottom: 0;
+    text-align: center;
 }
 
 a{
@@ -185,4 +187,42 @@ footer.index{
 .seccion-detalles__img{
     width: 50%;
     object-fit: contain;
+}
+
+/* Servicios */
+
+.servicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.servicio__card{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.servicio__img{
+    height: 240px;
+    object-fit: cover;
+}
+
+/* Contacto */
+
+.mi-formulario{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #a7e7f8 0%, #aef5b5 100%);
+    padding: 4% 15%;
+}
+
+.send-form{
+    width: 100px;
+    margin: 20px auto;
 }
