@@ -1,58 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
     text-align: center;
 }
 
-h1{
+h1 {
     color: #f7ebeb;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-size: 3em;
     font-weight: bold;
 }
 
-h3{
+h3 {
     font-weight: bold;
+    margin: 20px;
 }
 
-p{
+p {
     margin-bottom: 0;
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: #019267;
 }
 
-i{
+i {
     margin: 0 10px;
     font-size: 2em;
     color: #000;
 }
 
-span{
+span {
     color: #7cd4ab;
     font-style: italic;
 }
 
 /* Header */
 
-header{
+header {
     display: flex;
     align-items: center;
     background-color: #212529;
@@ -60,44 +64,44 @@ header{
     min-height: 11vh;
 }
 
-header img{
+header img {
     width: 50px;
     margin: 10px;
 }
 
 
-nav{
+nav {
     display: flex;
     align-items: center;
 }
 
-ul{
+ul {
     margin: 0 25px;
 }
 
-ul li{
+ul li {
     list-style-type: none;
     font-size: 1.2em;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #f7ebeb ;
+    color: #f7ebeb;
     font-weight: 100;
 }
 
-.navbar-dark .navbar-nav a.nav-link:hover{
+.navbar-dark .navbar-nav a.nav-link:hover {
     text-shadow: 5px 5px 20px white;
     transition: .5s;
     color: #648f82;
 }
 
-.navbar-dark .navbar-nav .nav-link.active{
+.navbar-dark .navbar-nav .nav-link.active {
     color: #019267;
 }
 
 /* Footer */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -109,7 +113,7 @@ footer{
 
 /* Index*/
 
-main.index{
+main.index {
     min-height: 89vh;
     background-image: url(../assets/images/background.jpg);
     background-size: cover;
@@ -118,11 +122,11 @@ main.index{
     align-items: center;
 }
 
-.index p{
+.index p {
     text-align: justify;
 }
 
-footer.index{
+footer.index {
     justify-content: inherit;
     position: absolute;
     text-align: center;
@@ -136,7 +140,7 @@ footer.index{
     padding: 10px;
 }
 
-.nosotros{
+.nosotros {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -152,7 +156,7 @@ footer.index{
 
 /* Layout */
 
-.seccion-introductora{
+.seccion-introductora {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -165,18 +169,18 @@ footer.index{
 
 /* Nosotros */
 
-.gato-nosotros{
+.gato-nosotros {
     margin: 0 auto;
     display: block;
 }
 
-.seccion-detalles{
+.seccion-detalles {
     display: flex;
     width: 60%;
     margin: 50px auto;
 }
 
-.seccion-detalles__child{
+.seccion-detalles__child {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -184,20 +188,20 @@ footer.index{
     padding: 0 20px;
 }
 
-.seccion-detalles__img{
+.seccion-detalles__img {
     width: 50%;
     object-fit: contain;
 }
 
 /* Servicios */
 
-.servicio{
+.servicio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.servicio__card{
+.servicio__card {
     display: flex;
     flex-direction: column;
     max-width: 30%;
@@ -205,16 +209,21 @@ footer.index{
     margin: 10px;
 }
 
-.servicio__img{
+.servicio__card p {
+    padding: 20px 0;
+}
+
+.servicio__img {
     height: 240px;
     object-fit: cover;
 }
 
 /* Contacto */
 
-.mi-formulario{
+.mi-formulario {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 80%;
     margin: 0 auto;
     border-radius: 20px;
@@ -222,7 +231,70 @@ footer.index{
     padding: 4% 15%;
 }
 
-.send-form{
+.send-form {
     width: 100px;
     margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+textarea[name="msj"] {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 730px) {
+    
+    
+
+    .gato-nosotros{
+        width: 60%;
+    }
+
+    .seccion-detalles{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 70vh;
+        width: 90%;
+    }
+
+    .seccion-detalles__img{
+        width: 70%;
+    }
+}
+
+
+
+@media (max-width: 530px) {
+
+    .servicio__card {
+        max-width: none;
+        min-width: none;
+        width: 75%;
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+
+    .send-form {
+        width: 100px;
+        margin: 10px auto;
+    }
+
+    .mi-formulario {
+        padding: 3% 10%;
+        width: 90%;
+    }
+
 }
