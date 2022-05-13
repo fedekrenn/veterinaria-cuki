@@ -129,6 +129,10 @@ main.index {
     margin: 20px 0;
 }
 
+.index h2{
+    font-size: 4vw;
+}
+
 footer.index {
     background-color: transparent;
     position: absolute;
@@ -253,10 +257,6 @@ textarea[name="msj"] {
 
 @media (max-width: 730px) {
     
-    .index h2{
-        font-size: 1.8em;
-    }
-
     .gato-nosotros{
         width: 60%;
     }
@@ -272,6 +272,21 @@ textarea[name="msj"] {
     .seccion-detalles__img{
         width: 70%;
     }
+
+    footer.index{
+        width: 100%;
+        min-height: 0;
+        position: inherit;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        background-color: #ECEDE8;
+    }
+
+    main.index{
+        min-height: 0;
+    }
 }
 
 
@@ -280,6 +295,14 @@ textarea[name="msj"] {
 
     h2{
         font-size: 1.5em;
+    }
+
+    .index h2{
+        font-size: 1.4em;
+    }
+
+    .nosotros{
+        width: 90%;
     }
 
     .seccion-introductora p{
@@ -302,6 +325,8 @@ textarea[name="msj"] {
         font-size: 1em;
         margin: 0 10px;
     }
+
+    
 
     .send-form {
         width: 100px;
