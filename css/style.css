@@ -76,6 +76,10 @@ nav {
     align-items: center;
 }
 
+.navbar-nav{
+    align-items: center;
+}
+
 ul {
     margin: 0 25px;
 }
@@ -83,6 +87,10 @@ ul {
 ul li {
     list-style-type: none;
     font-size: 1.2em;
+}
+
+.btn-info{
+    margin: auto 20px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
